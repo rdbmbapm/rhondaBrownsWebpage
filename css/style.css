@@ -1,0 +1,66 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+font-family: 'Times New Roman', serif;
+background-color: rgb(125, 125, 139);
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+color: #f5f5f5;
+background-color: rgb(105, 105, 138);
+}
+
+section {
+     background-color: rgb(229, 229, 248);
+     padding: 1rem;
+}
+section + section {
+     background-color: rgb(208, 208, 238);
+}
+
+footer {
+color: #f5f5f5;
+background-color:rgb(61, 61, 92)
+}
+
+header, footer{
+     color: #f5f5f5;
+     padding: 0.1rem 1rem;
+}
+
+/******************************************
+/* DESKTOP-SPECIFIC STYLES
+/*******************************************/
+@media all and (min-width: 601px){
+     main{
+          display: flex;
+     }
+     section{
+          width: 50%;
+     }
+}
