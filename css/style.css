@@ -60,7 +60,7 @@ section + section {
      background-color: rgb(208, 208, 238);
 }
 img{
-     align-self: center;
+     max-width: 100%;
 }
 footer, body {
 background-color:rgb(61, 61, 92);
@@ -71,6 +71,9 @@ div{
 }
 p{
      margin: 16px;
+}
+figure{
+     margin: 0;
 }
 
 /******************************************
@@ -83,6 +86,9 @@ p{
           min-height: 70vh;
      }
      section{
-          width: 50%;
+          width: 45%;
+     }
+     section+section{
+          width: 55%;
      }
 }
