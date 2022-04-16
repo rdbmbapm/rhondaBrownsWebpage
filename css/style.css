@@ -22,10 +22,18 @@
 /*******************************************/
 
 body {
-font-family: 'Times New Roman', serif;
+font-family: "Microsoft YaHei Light", Arial, Helvetica, sans-serif;
 }
 ul{
      list-style: none;
+}
+
+/******************************************
+/* FONTS
+/*******************************************/
+
+figcaption {
+     font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
 }
 
 
@@ -34,6 +42,9 @@ ul{
 /*******************************************/
 address{
      font-style: normal;
+}
+address li:first-child{
+     font-weight: bold;
 }
 address a{
      color:#8cabe6;
@@ -85,11 +96,16 @@ aside aside{
      display: flex;
      flex-direction: column;
      align-items: center;
+     justify-content: space-between;
      padding: 10px;
      max-width: 400px;
      border-radius: 2px;
      margin: 5px;
      filter: drop-shadow(4px 4px 10px #000);
+}
+aside p{
+     font-weight: bolder;
+     text-align: center;
 }
 aside img{
      max-width: 95%;
