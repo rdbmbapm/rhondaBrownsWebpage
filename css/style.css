@@ -35,13 +35,22 @@ ul{
 figcaption {
      font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
 }
-
-
+ 
+ 
 /******************************************
 /* LAYOUT
 /*******************************************/
 address{
      font-style: normal;
+     border: 3px solid #8cabe6;
+     background-color: rgb(52, 52, 82);
+     height: fit-content;
+     width:fit-content;
+     padding: 5px 20px 5px 0;
+     filter:drop-shadow(3px 3px 6px #000);
+     margin-top: 3px;
+     border-radius: 5px;
+
 }
 address li:first-child{
      font-weight: bold;
@@ -125,11 +134,13 @@ aside a:hover{
 /* DESKTOP-SPECIFIC STYLES
 /*******************************************/
 @media all and (min-width: 601px){
+     header img{
+          max-width: 80%;
+     }
      main{
           display: flex;
           flex-direction: row;
           justify-content: space-evenly;
-          min-height: 70vh;
      }
      section{
           width: 45%;
@@ -149,6 +160,9 @@ aside a:hover{
 @media all and (min-width: 874px){
      footer > aside{
           flex-direction: row;
+     }
+     header img{
+          max-width: 60%;
      }
 }
 @media all and (min-width: 1150px){
