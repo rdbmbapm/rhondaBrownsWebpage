@@ -30,13 +30,12 @@ ul{
 }
 
 /******************************************
-/* FONTS
+/* SPECIFIC FONTS
 /*******************************************/
 
 figcaption {
      font-family: 'Roboto Condensed', 'Arial Narrow', Arial, Helvetica, sans-serif;
 }
- 
  
 /******************************************
 /* LAYOUT
@@ -151,6 +150,7 @@ aside a:hover{
           display: flex;
           flex-direction: column;
           justify-content: center;
+          line-height: 1.3;
      }
      footer > aside{
           display: flex;
