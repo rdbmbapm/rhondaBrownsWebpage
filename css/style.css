@@ -81,7 +81,7 @@ section {
      display: flex;
      flex-direction: column;
 }
-section + section, main {
+section + section {
      background-color: rgb(208, 208, 238);
 }
 img{
@@ -185,8 +185,9 @@ aside a:hover{
           display: flex;
           flex-direction: row;
           justify-content: space-evenly;
+          background-color: rgb(229, 229, 248);
      }
-     section{
+     main section{
           width: 45%;
      }
      section+section{
@@ -196,6 +197,10 @@ aside a:hover{
           justify-content: center;
           line-height: 1.6;
      }
+     section+section{
+          border-radius: 0 0 5px 5px;
+     }
+
 }
 @media all and (min-width: 1144px){
 
