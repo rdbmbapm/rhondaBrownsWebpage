@@ -36,11 +36,11 @@ ul{
 figcaption {
      font-family: 'Roboto Condensed', 'Arial Narrow', Arial, Helvetica, sans-serif;
 }
-h3 {
+/*h3 {
      font-family: 'Open Sans', 'Microsoft YaHei Light', Arial, Helvetica, sans-serif;
      font-weight: 700;
      margin-left: 5px;
-}
+}*//*Since there are no longer any h3s in this revision, this part isn't needed.*/
  
 /******************************************
 /* LAYOUT
@@ -162,7 +162,7 @@ aside a:hover{
           max-width: 50%;
      }
 }
-@media all and (min-width: 865px){
+/*@media all and (min-width: 865px){
      address{
           margin-left: auto;
           margin-right: auto;
@@ -176,7 +176,7 @@ aside a:hover{
           margin-right: auto;
           max-width: 15%;
      }
-}
+}*/
 /******************************************
 /* DESKTOP-SPECIFIC STYLES
 /*******************************************/
@@ -208,9 +208,9 @@ aside a:hover{
           max-width: 60%;
      }
 }
-@media all and (min-width: 1150px){
+/*@media all and (min-width: 1150px){
      footer{
           flex-direction: row;
           justify-content: space-between;
      }
-}
+}*/
