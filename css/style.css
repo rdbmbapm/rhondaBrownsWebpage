@@ -117,12 +117,12 @@ footer{
      margin: 5px;
      filter: drop-shadow(4px 4px 10px #000);
 }
-@media all and (max-width: 600px){
+/*@media all and (max-width: 600px){*//* IMPORTANT: IF SECOND LINK IS RE-ADDED, JUST UNCOMMENT THIS CODE (And the code below)*/
      .affiliateLink{
      margin-left:auto;
      margin-right: auto;
      }
-}
+/*} This is also part of the commented code*/
 aside p{
      font-weight: 600;
      text-align: center;
@@ -152,6 +152,7 @@ aside a:hover{
           max-width: 600px;
           align-self: center;
      }
+     /* IMPORTANT: IF SECOND LINK IS RE-ADDED, JUST UNCOMMENT THIS CODE (And the code above)
      .affiliateContainer{
           display: flex;
           flex-direction: row;
@@ -160,7 +161,7 @@ aside a:hover{
      }
      .affiliateLink{
           max-width: 50%;
-     }
+     }*/
 }
 /*@media all and (min-width: 865px){
      address{
