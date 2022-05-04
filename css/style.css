@@ -1,6 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 /* Box Model Hack */
 * {
-     box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+             box-sizing: border-box;
 }
 
 /* Clear fix hack */
@@ -49,10 +57,15 @@ address{
      font-style: normal;
      border: 3px solid #8cabe6;
      background-color: rgb(52, 52, 82);
+     height: -webkit-fit-content;
+     height: -moz-fit-content;
      height: fit-content;
+     width:-webkit-fit-content;
+     width:-moz-fit-content;
      width:fit-content;
      padding: 5px 20px 5px 0;
-     filter:drop-shadow(3px 3px 6px #000);
+     -webkit-filter:drop-shadow(3px 3px 6px #000);
+             filter:drop-shadow(3px 3px 6px #000);
      margin-top: 3px;
      border-radius: 5px;
 
@@ -67,19 +80,28 @@ a:hover{
      text-decoration: none;
 }
 header, footer{
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
      color: #f5f5f5;
      padding: 0.1rem 1rem;
 }
 header {
 background-color: rgb(105, 105, 138);
-justify-content: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 }
 section {
      background-color: rgb(229, 229, 248);
      padding: 1rem;
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     flex-direction: column;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
 }
 section + section {
      background-color: rgb(208, 208, 238);
@@ -101,21 +123,36 @@ figure{
      margin: 0;
 }
 footer{
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     flex-direction: column;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
 }
 .affiliateLink{
      background-color: #f5f5f5;
      color: #000;
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: space-between;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+     -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
+             justify-content: space-between;
      padding: 10px;
      max-width: 400px;
      border-radius: 2px;
      margin: 5px;
-     filter: drop-shadow(4px 4px 10px #000);
+     -webkit-filter: drop-shadow(4px 4px 10px #000);
+             filter: drop-shadow(4px 4px 10px #000);
 }
 /*@media all and (max-width: 600px){*//* IMPORTANT: IF SECOND LINK IS RE-ADDED, JUST UNCOMMENT THIS CODE (And the code below)*/
      .affiliateLink{
@@ -138,7 +175,8 @@ aside a{
      text-decoration: none;
 }
 aside a:hover{
-     filter: drop-shadow(4px 4px 10px #ec642a);
+     -webkit-filter: drop-shadow(4px 4px 10px #ec642a);
+             filter: drop-shadow(4px 4px 10px #ec642a);
 }
 
 /******************************************
@@ -150,7 +188,9 @@ aside a:hover{
      }
      figure{
           max-width: 600px;
-          align-self: center;
+          -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+              align-self: center;
      }
      /* IMPORTANT: IF SECOND LINK IS RE-ADDED, JUST UNCOMMENT THIS CODE (And the code above)
      .affiliateContainer{
@@ -168,9 +208,16 @@ aside a:hover{
 /*******************************************/
 @media all and (min-width: 1144px){
      main{
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          flex-direction: row;
-          justify-content: space-evenly;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -webkit-box-pack: space-evenly;
+              -ms-flex-pack: space-evenly;
+                  justify-content: space-evenly;
           background-color: rgb(229, 229, 248);
      }
      main section{
@@ -178,9 +225,16 @@ aside a:hover{
      }
      section+section{
           width: 50%;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          flex-direction: column;
-          justify-content: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
           line-height: 1.6;
      }
      section+section{
